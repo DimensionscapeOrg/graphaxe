@@ -1,4 +1,5 @@
 Mozilla Public License Version 2.0
+w/ Commercial Engine Clause
 ==================================
 
 1. Definitions
@@ -352,7 +353,8 @@ If You choose to distribute Source Code Form that is Incompatible With
 Secondary Licenses under the terms of this version of the License, the
 notice described in Exhibit B of this License must be attached.
 
-Additional Use Restrictions
+Commercial Engine Clause and Additional Use Restrictions
+--------------------------------------------------------
 
 Non-Commercial Redistribution as an Engine:
 The Software licensed under this agreement (referred to as "the Engine") may not be redistributed, sublicensed, or sold as a standalone engine, tool, or framework for commercial purposes. This restriction includes, but is not limited to, the distribution of the Engine as part of a development kit, library, or any other package where the primary purpose is to provide the Engine to third parties for creating their own software products.
