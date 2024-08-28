@@ -1,0 +1,32 @@
+[{
+	access: [APublic]
+	doc: null
+	kind: FVar(TNamed(Class<String> <- expected String), {
+		expr: EConst(CString(https://api.example.com, DoubleQuotes))
+		pos: #pos
+	})
+	meta: null
+	name: apiEndpoint
+	pos: #pos
+}, {
+	access: [APublic]
+	doc: null
+	kind: FVar(TParent, {
+		expr: EConst(CIdent(true))
+		pos: #pos
+	})
+	meta: null
+	name: enableLogging
+	pos: #pos
+}, {
+	access: [APublic]
+	doc: null
+	kind: FVar(TFunction, {
+		expr: EConst(CInt(10, null))
+		pos: #pos
+	})
+	meta: null
+	name: maxConnections
+	pos: #pos
+}]
+line 4: expected String

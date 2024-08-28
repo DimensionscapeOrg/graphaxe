@@ -1,0 +1,5 @@
+{
+    "apiEndpoint": "https://api.example.com",
+    "maxConnections": 10,
+    "enableLogging": true
+}

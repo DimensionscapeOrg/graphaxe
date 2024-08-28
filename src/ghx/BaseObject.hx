@@ -1,4 +1,4 @@
-package;
+package ghx;
 import haxe.ds.ObjectMap;
 import ghx.utils.IRecyclable;
 import ghx.utils.IDisposable;

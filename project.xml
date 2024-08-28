@@ -22,5 +22,6 @@
 	
 	 optimize output
 	<haxeflag name="-dce full" /> -->
+	<funkle name="wigdet" value="hello world" />
 	
 </project>
