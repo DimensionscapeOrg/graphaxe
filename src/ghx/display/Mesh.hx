@@ -42,7 +42,7 @@ import starling.utils.MeshUtil;
  *  @see starling.rendering.IndexData
  */
 class Mesh extends DisplayObject
-{
+{   
     @:allow(starling) @:noCompletion private var __style:MeshStyle;
     @:allow(starling) @:noCompletion private var __vertexData:VertexData;
     @:allow(starling) @:noCompletion private var __indexData:IndexData;

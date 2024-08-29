@@ -14,16 +14,23 @@ class ConfigMacro {
 
         // Read and parse the JSON file
         var jsonData:String = File.getContent(filePath);
-        var configData:Dynamic = Json.parse(jsonData);
+        var configData:Dynamic = Json.parse(jsonData);       
 
-        // Generate fields for the Config class
-        var fields:Array<Field> = [];
+        var version = {
+            name: "version",
+            access: [Access.APublic, Access.AStatic, Access.AInline, Access.AFinal],
+            kind: FieldType.FVar(null, macro $v{"0.0.2"}),
+            pos: Context.currentPos()
+        }
+
+        var fields:Array<Field> = [version];
+       
         for (key in Reflect.fields(configData)) {
             var value = Reflect.field(configData, key);
 
             fields.push({
                 name: key,
-                access: [Access.APublic, Access.AStatic],
+                access: [Access.APublic, Access.AStatic, Access.AFinal],
                 kind: FieldType.FVar(null, macro $v{value}),
                 pos: Context.currentPos()
             });

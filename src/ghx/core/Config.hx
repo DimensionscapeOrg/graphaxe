@@ -1,7 +1,6 @@
 package ghx.core;
 
 @:build(ghx._internal.macro.ConfigMacro.build())
-@:structInit
 class Config{
-    
+    public static inline final version:String;
 }

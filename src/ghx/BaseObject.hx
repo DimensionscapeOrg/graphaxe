@@ -64,7 +64,7 @@ import ghx.utils.IDisposable;
      * This method can be overridden in subclasses to implement additional recycling logic.
      */
     public function recycle():Void {
-        reset();
+        resetObject();
     }
 
     /**
@@ -72,7 +72,7 @@ import ghx.utils.IDisposable;
      * Currently, this resets the `name` property to an empty string.
      * This method can be overridden in subclasses to reset additional properties.
      */
-    public function reset():Void {
+    public function resetObject():Void {
         name = "";
     }
 

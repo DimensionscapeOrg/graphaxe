@@ -172,6 +172,7 @@ class Stage extends DisplayObjectContainer {
 	// enter frame event optimization
 
 	/** @private */
+	@:allow(ghx)
 	@:allow(starling) private function addEnterFrameListener(listener:DisplayObject):Void {
 		var index:Int = __enterFrameListeners.indexOf(listener);
 		if (index < 0)
@@ -179,6 +180,7 @@ class Stage extends DisplayObjectContainer {
 	}
 
 	/** @private */
+	@:allow(ghx)
 	@:allow(starling) private function removeEnterFrameListener(listener:DisplayObject):Void {
 		var index:Int = __enterFrameListeners.indexOf(listener);
 		if (index >= 0)

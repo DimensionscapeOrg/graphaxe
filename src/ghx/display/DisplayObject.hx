@@ -140,6 +140,7 @@ class DisplayObject extends EventDispatcher {
 	@:allow(starling) @:noCompletion private var __pushToken:BatchToken = new BatchToken();
 	@:allow(starling) @:noCompletion private var __popToken:BatchToken = new BatchToken();
 	@:allow(starling) @:noCompletion private var __hasVisibleArea:Bool;
+	@:allow(ghx)
 	@:allow(starling) @:noCompletion private var __filter:FragmentFilter;
 	@:allow(starling) @:noCompletion private var __mask:DisplayObject;
 
@@ -1208,7 +1209,7 @@ class DisplayObject extends EventDispatcher {
 
 	/** The name of the display object (default: null). Used by 'getChildByName()' of 
 	 * display object containers. */
-	public var name(get, set):String;
+	/* public var name(get, set):String;
 
 	private function get_name():String {
 		return __name;
@@ -1216,7 +1217,7 @@ class DisplayObject extends EventDispatcher {
 
 	private function set_name(value:String):String {
 		return __name = value;
-	}
+	} */
 
 	/** The filter that is attached to the display object. The <code>starling.filters</code>
 	 *  package contains several classes that define specific filters you can use. To combine

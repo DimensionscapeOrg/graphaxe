@@ -1,5 +1,10 @@
 {
-    "apiEndpoint": "https://api.example.com",
-    "maxConnections": 10,
-    "enableLogging": true
+    "viewport": {
+        "x": 0,
+        "y":0, 
+        "width": 960,
+        "height": 540
+    },
+    "entrypoint":"Main",
+    "stats":false
 }

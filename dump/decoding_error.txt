@@ -1,7 +1,17 @@
 [{
-	access: [APublic]
+	access: [APublic, AStatic]
 	doc: null
-	kind: FVar(TNamed(Class<String> <- expected String), {
+	kind: FVar(null, {
+		expr: EConst(CString(0.0.1, DoubleQuotes))
+		pos: #pos
+	})
+	meta: null
+	name: version
+	pos: #pos
+}, {
+	access: [APublic, null <- expected enum value, AStatic, AInline, AFinal]
+	doc: null
+	kind: FVar(null, {
 		expr: EConst(CString(https://api.example.com, DoubleQuotes))
 		pos: #pos
 	})
@@ -9,9 +19,9 @@
 	name: apiEndpoint
 	pos: #pos
 }, {
-	access: [APublic]
+	access: [APublic, null <- expected enum value, AStatic, AInline, AFinal]
 	doc: null
-	kind: FVar(TParent, {
+	kind: FVar(null, {
 		expr: EConst(CIdent(true))
 		pos: #pos
 	})
@@ -19,9 +29,9 @@
 	name: enableLogging
 	pos: #pos
 }, {
-	access: [APublic]
+	access: [APublic, null <- expected enum value, AStatic, AInline, AFinal]
 	doc: null
-	kind: FVar(TFunction, {
+	kind: FVar(null, {
 		expr: EConst(CInt(10, null))
 		pos: #pos
 	})
@@ -29,4 +39,6 @@
 	name: maxConnections
 	pos: #pos
 }]
-line 4: expected String
+line 12: expected enum value
+line 22: expected enum value
+line 32: expected enum value

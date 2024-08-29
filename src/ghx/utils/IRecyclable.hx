@@ -12,5 +12,5 @@ interface IRecyclable {
     /**
      * Resets the object to a default state.
      */
-    public function reset():Void;
+    public function resetObject():Void;
 }

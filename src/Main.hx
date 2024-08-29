@@ -1,8 +1,7 @@
 package;
 
-import openfl.display.Sprite;
-import openfl.Lib;
-import ghx.core.Engine;
+import ghx.display.Quad;
+import ghx.display.Sprite;
 /**
  * ...
  * @author Christopher Speciale
@@ -13,9 +12,10 @@ class Main extends Sprite
 	public function new() 
 	{
 		super();
+		trace('hello');
 
-		new Engine();
-	
+		addChild(new Quad(32,32,0x00ff00));
+		
 	}
 
 	
