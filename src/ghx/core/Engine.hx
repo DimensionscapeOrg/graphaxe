@@ -23,7 +23,6 @@ final class Engine {
 			engine = new Engine(Lib.current.stage);
 		}
 	}
-
 	// public var camera(get, null):Camera2D;
 	public var viewPort(get, set):Rectangle;
 
